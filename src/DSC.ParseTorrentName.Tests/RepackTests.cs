@@ -1,3 +1,5 @@
+using Xunit;
+
 namespace DSC.ParseTorrentName.Tests
 {
     public class RepackTests

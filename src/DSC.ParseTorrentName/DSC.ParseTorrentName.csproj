@@ -1,10 +1,38 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Title>DSC.ParseTorrentName</Title>
+    <Company>Davis Software Consulting, LLC</Company>
+    <Authors>Braydon Davis</Authors>
+    <Description>A port of Clement Escolano's parse-torrent-title library for parsing torrent file names!</Description>
+    <Copyright>MIT</Copyright>
+    <PackageProjectUrl>https://github.com/DSC-bdavis/DSC.ParseTorrentName</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/DSC-bdavis/DSC.ParseTorrentName</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>torrent;parse;file name</PackageTags>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>DavisSoftwareConsulting.ParseTorrentName</PackageId>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="System.Runtime" Version="4.3.0" />
