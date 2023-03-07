@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSC.ParseTorrentName", "DSC.ParseTorrentName\DSC.ParseTorrentName.csproj", "{FB89A2A4-F418-43E4-8404-E015FBC8A048}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSC.ParseTorrentName.Tests", "DSC.ParseTorrentName.Tests\DSC.ParseTorrentName.Tests.csproj", "{730A5372-A930-4B72-8DDD-1F07DA03A613}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB89A2A4-F418-43E4-8404-E015FBC8A048}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB89A2A4-F418-43E4-8404-E015FBC8A048}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB89A2A4-F418-43E4-8404-E015FBC8A048}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB89A2A4-F418-43E4-8404-E015FBC8A048}.Release|Any CPU.Build.0 = Release|Any CPU
+		{730A5372-A930-4B72-8DDD-1F07DA03A613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{730A5372-A930-4B72-8DDD-1F07DA03A613}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{730A5372-A930-4B72-8DDD-1F07DA03A613}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{730A5372-A930-4B72-8DDD-1F07DA03A613}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {07FDCDE8-2B88-40D1-993A-19FE9F9422B3}
+	EndGlobalSection
+EndGlobal
