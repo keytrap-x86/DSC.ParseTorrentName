@@ -18,6 +18,8 @@ namespace DSC.ParseTorrentName
             return this[DefaultHandlerNames.Title];
         }
 
+#pragma warning disable CS8766 // Nullability of reference types in return type doesn't match implicitly implemented member (possibly because of nullability attributes).
+
         public string? this[string handlerName]
         {
             get
@@ -32,6 +34,8 @@ namespace DSC.ParseTorrentName
                 return null;
             }
         }
+
+#pragma warning restore CS8766 // Nullability of reference types in return type doesn't match implicitly implemented member (possibly because of nullability attributes).
 
         public int Count => _results.Count;
 
