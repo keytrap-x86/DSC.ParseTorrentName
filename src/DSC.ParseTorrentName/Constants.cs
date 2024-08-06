@@ -13,6 +13,7 @@ namespace DSC.ParseTorrentName
 
         private static readonly List<Handler> _defaultHandlers = new List<Handler>
         {
+            new Handler(DefaultHandlerNames.Year, new Regex(@"(19|20)\d{2}(?!.*(19|20)\d{2})"), new HandlerOptions(type: "integer")),
             new Handler(DefaultHandlerNames.Year, new Regex(@"(?!^)[([]?((?:19[0-9]|20[012])[0-9])[)\]]?"), new HandlerOptions(type: "integer")),
             new Handler(DefaultHandlerNames.Resolution, new Regex(@"([0-9]{3,4}[pi])", RegexOptions.IgnoreCase), new HandlerOptions(type: "lowercase")),
             new Handler(DefaultHandlerNames.Resolution, new Regex(@"(4k)", RegexOptions.IgnoreCase), new HandlerOptions(type: "lowercase")),
